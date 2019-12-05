@@ -1,0 +1,581 @@
+$source: 'Source Sans Pro', sans-serif
+$gray: #999
+$blue: #008ed6
+$black: #1a1a1a
+
+
+
+// GLOBAL STYLES
+ul
+	list-style: none
+
+.top-h
+	display: block
+	font-size: 14px
+	color: $blue
+	font-weight: bold
+	text-transform: uppercase
+	letter-spacing: 1px
+	padding-bottom: 25px
+
+.section-title
+		color: $black
+		font-size: 36px
+		font-weight: 700
+
+
+		&:after
+			content: ''
+			display: block
+			margin-top: 30px
+			width: 45px
+			height: 2px
+			background-color: $blue
+
+body
+	font-family: $source
+	font-size: 18px
+	color: $gray
+
+.btn
+	display: inline-block
+	width: 160px
+	text-align: center
+	color: #fff
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: bold
+	padding: 20px 0px
+	border-radius: 3px
+
+.btn-download
+	background-color: $blue
+	margin-right: 20px
+
+	&:hover
+		background-color: darken($blue, 10%)
+
+.btn-features
+	border: 1px solid $gray
+
+	&:hover
+		color: $blue
+		border: 1px solid $blue
+
+.progress
+	position: fixed
+	top: 0
+	left: 0
+	height: 3px
+	background-color: $blue
+	width: 0
+	z-index: 10000
+
+.fixed
+	height: 100vh
+	overflow: hidden
+
+// HEADER
+
+.header
+	background: url('../img/header-bg.png') center top
+	background-size: cover
+	color: #fff
+	padding-top: 45px
+	padding-bottom: 110px
+	position: relative
+	overflow: hidden
+
+	.header-top
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	#nav-btn
+		display: none
+
+		span
+			display: block
+			width: 30px
+			height: 2px
+			background-color: #fff
+			margin-top: 5px
+			transition: all 0.3s
+	
+	.logo
+		display: flex
+		align-items: center
+
+	.logo-main
+		font-family: Quicksand, sans-serif
+		font-size: 24px
+		text-transform: uppercase
+		margin-right: 10px
+
+	.logo-desc
+		display: block
+		font-size: 9px
+		opacity: 0.3
+		width: 45px
+		text-transform: uppercase
+
+	.top-nav
+		z-index: 100
+		a
+			color: #fff
+			font-size: 16px
+			font-weight: 600
+			margin-left: 25px
+			padding-bottom: 5px
+			transition: all 0.2s
+
+		a:first-child
+			margin-left: 0
+
+		a:hover
+			border-bottom: 2px solid $blue
+			
+
+
+	.header-text
+		width: 485px
+		margin-top: 105px
+
+		.top-h
+			padding-bottom: 30px
+
+		h1
+			font-size: 48px
+			font-weight: 600
+			margin-bottom: 30px
+
+		.header-desc
+			color: $gray
+			line-height: 24px
+			padding-bottom: 65px
+
+	.header-wrapper
+		display: flex
+		justify-content: space-between
+	.header-img
+		position: relative
+		max-width: 100%
+
+		img
+			position: absolute
+			top: 80px
+			right: 0
+
+// FEATURES
+
+.features
+	text-align: center
+	padding-top: 65px
+	padding-bottom: 65px
+
+	.section-title
+
+		&:after
+			margin: auto
+			margin-bottom: 75px
+			margin-top: 35px
+
+.features-item__img
+	width: 90px
+	height: 90px
+	border-radius: 50%
+	border: 2px solid #e5e5e5
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 35px
+
+.features-item__title
+	font-size: 24px
+	color: $black
+	margin-bottom: 10px
+	font-weight: 400
+
+.features-item__text
+	line-height: 24px
+	padding: 0 5px
+
+
+// ABOUT
+
+.first-about
+	padding-top: 70px
+	border-top: 2px solid #e5e5e5
+
+	.top-h
+		margin-top: 50px
+
+	img
+		max-width: 100%
+		margin: 0 auto
+		display: inline-block
+
+.section-text
+	line-height: 24px
+	padding-top: 20px
+
+.about-list
+	margin-top: 30px
+	color: $black
+
+	// li:before
+	// 	content: ''
+	// 	display: inline-block
+	// 	width: 15px
+	// 	height: 15px
+	// 	margin-right: 5px
+	
+	li
+		margin-top: 15px
+
+	li:nth-child(1)
+		background-image: url('../img/about-li1.png')
+		background-repeat: no-repeat
+		background-position: left center
+		padding: 0 0 0 25px
+
+	li:nth-child(2)
+		background-image: url('../img/about-li2.png')
+		background-repeat: no-repeat
+		background-position: left center
+		padding: 0 0 0 25px
+	li:nth-child(3)
+		background-image: url('../img/about-li3.png')
+		background-repeat: no-repeat
+		background-position: left center
+		padding: 0 0 0 25px
+
+	li:nth-child(4)
+		background-image: url('../img/about-li4.png')
+		background-repeat: no-repeat
+		background-position: left center
+		padding: 0 0 0 25px
+
+.second-about
+	background-color: #e5e5e5
+	padding-top: 80px
+
+	.top-h
+		margin-top: 30px
+
+	img
+		max-width: 100%
+		height:
+
+// TESTIMONIALS
+
+.testimonials
+	padding: 65px 0
+	background: url('../img/testimonials-bg.png')
+	background-size: cover
+	background-position: center center
+
+	.top-h,
+	.section-title
+		text-align: center
+
+	.section-title
+		color: #fff
+
+	.section-title:after
+		margin: auto
+		margin-top: 40px
+		margin-bottom: 75px
+
+	.slider-item__img
+		width: 60px
+		height: 60px
+		border-radius: 50%
+		margin-right: 25px
+
+		img
+			width: 100%
+			height: 100%
+			overflow: hidden
+			border-radius: 50%
+
+	.slider-item__text
+		color: #fff
+		font-size: 24px
+		font-style: italic
+		line-height: 32px
+		margin-bottom: 25px
+
+		&:first-child
+			padding-right: 15px
+
+	.slider-item__wrap
+		display: flex
+		align-items: center
+
+	.slider-item__container
+		color: #fff
+
+		span
+			display: block
+
+	.slider-item__name
+		font-size: 14px
+
+	.slider-item__job
+		font-weight: bold
+		font-size: 14px
+		margin-top: 10px
+
+	// .slider-dots
+	// 	margin: 0 auto
+	// 	max-width: 100%
+	// 	display: flex
+	// 	margin-top: 135px
+
+	// 	&__dot
+	// 		display: block
+	// 		margin-right: 5px
+	// 		border-radius: 50%
+	// 		width: 10px
+	// 		height: 10px
+	// 		background-color: #fff
+	
+	.slick-dots li button
+		content: ''
+		display: block
+		color: transparent
+		width: 8px
+		height: 8px
+		padding: 0
+		border-radius: 50%
+		background-color: transparent
+		border: 2px solid $gray
+		margin-right: 20px
+		margin-top: 135px
+
+	.slick-dots
+		display: flex
+		width: 100%
+		max-width: auto
+		align-items: center
+		justify-content: center
+
+	.slick-dots li.slick-active button
+		width: 14px
+		height: 14px
+		background-color: #fff
+		border: none
+
+// subscribe
+.subscribe
+	background-color: #15141a
+	color: #fff
+	padding: 70px 0
+
+	.subscribe-text
+		font-size: 34px
+
+		&__bold
+			font-weight: 600
+
+		&__light
+			font-weight: 300
+
+
+	.subscribe-btns .btn
+		margin-left: 20px
+
+// Pricing
+
+.pricing
+	padding: 60px 0
+
+	.top-h,
+	.section-title
+		text-align: center
+
+	.section-title:after
+		margin: auto
+		margin-top: 40px
+		margin-bottom: 75px
+
+	.pricing-card
+		border: 2px solid lighten($gray, 35%)
+		text-align: center
+
+		&__name
+			font-size: 24px
+			color: #000
+			font-weight: bold
+			text-transform: uppercase
+			padding: 25px 0
+			border-bottom: 2px solid lighten($gray, 35%)
+
+		&__price
+			font-size: 60px
+			color: #000
+			font-weight: bold
+			padding: 40px 0
+			border-bottom: 2px solid lighten($gray, 35%)
+
+			sup
+				font-size: 30px
+				font-weight: 700
+
+			span
+				display: block
+				font-size: 18px
+				color: $gray
+				font-weight: 400
+
+		&__text
+			line-height: 24px
+			padding: 50px 20px 0 20px
+
+			span
+				color: $blue
+
+		.btn-order
+			color: $blue
+			padding: 15px
+			border: 2px solid lighten($gray, 35%)
+			margin-top: 50px
+			margin-bottom: 30px
+
+		&__price.active
+			color: #fff
+			background-color: $blue
+
+			span
+				color: #fff
+
+		&__name.active
+			color: $blue
+
+		.btn-order.active
+			color: #fff
+			background-color: $blue
+			border-color: transparent
+
+// CONTACT
+
+.contact
+	background-color: #ededed
+	text-align: center
+	padding: 60px 0 350px 0
+	position: relative
+
+	.section-title:after
+		margin: 40px auto
+
+	.contact-item__img
+		width: 55px
+		height: 45px
+		margin: 0 auto
+		margin-bottom: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+
+	.contact-item__text
+
+
+
+		span
+			display: block
+			line-height: 24px
+
+	.contact-form
+		background-color: #15141a
+		margin: auto
+		width: 770px
+		position: absolute
+		padding: 0 80px 0 80px
+		bottom: -60px
+		left: 0
+		right: 0
+		// left: 50%
+		// margin-left: -335px
+
+		.contact-form-wrap
+			display: flex
+			align-items: flex-end
+			margin: 0 auto
+			justify-content: center
+
+		.contact-form__input-container
+			padding-top: 60px
+			
+
+		input
+			display: block
+			width: 300px
+			height: 50px
+			margin-top: 20px
+			background-color: transparent
+			border: 1px solid darken($gray, 35%)
+			border-radius: 3px
+			color: #fff
+
+			&[placeholder]
+				font-size: 14px
+				text-transform: uppercase
+				font-weight: bold
+				padding-left: 15px
+
+			&:first-child
+				margin-top: 0
+
+		textarea
+			display: block
+			width: 300px
+			height: 190px
+			margin-left: 20px
+			background-color: transparent
+			border: 1px solid darken($gray, 35%)
+			border-radius: 3px
+			resize: none
+			color: #fff
+
+			&[placeholder]
+				font-size: 14px
+				text-transform: uppercase
+				font-weight: bold
+				padding-left: 15px
+				font-family: $source
+				padding-top: 15px
+
+		.btn
+			float: right
+			width: 160px
+			margin-right: 0
+			margin-bottom: 40px
+			background-color: $blue
+			border: none
+
+
+// FOOTER
+
+.footer
+	text-align: center
+	padding: 55px 0 45px 0
+	background-color: #15141a
+
+	.footer-socials
+		margin-bottom: 15px
+
+		a
+			display: inline-block
+			margin-left: 35px
+			color: $gray
+			font-size: 20px
+
+		a:hover
+			color: $blue
+
+		a:first-child
+			margin-left: 0
+
+@import 'adaptive'
